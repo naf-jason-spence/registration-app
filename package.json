@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Express", "MongoDB", "Pug"
+    "Express",
+    "MongoDB",
+    "Pug"
   ],
   "author": "",
   "license": "ISC",
