@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+    div.container
+
+        if registrations.length
+            div.row
+                div.col
+                    table.table.table-dark.mt-2
+                        tr
+                            th Name
+                            th Email
+                            th Created
+                        each registration in registrations
+                            tr
+                                td= registration.name
+                                td= registration.email
+                                td= registration.create_date
+            div.row
+                div.col.text-center
+                    a(class='btn btn-primary btn-lg my-2' href='/') Back to Home
+        else
+            p No registrations yet :(

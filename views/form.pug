@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    -data = data || {}
+    
+    if errors
+        ul.my-errors
+            for error in errors
+                li= error.msg
+                
+    form(action='.' method='post' class='form-registration')
+        
+        label(for='name') Name:
+        input(
+            type='text'
+            class='form-control'
+            id='name'
+            name='name'
+            value=data.name
+        )
+        
+        label(for='email') Email:
+        input(
+            type='email'
+            class='form-control'
+            id='email'
+            name='email'
+            value=data.email
+        )
+
+        input(
+            type='submit'
+            class='btn btn-lg btn-primary btn-block'
+            value='Submit'
+        )
