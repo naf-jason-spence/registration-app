@@ -13,7 +13,7 @@
     "Mongoose",
     "Pug"
   ],
-  "author": "",
+  "author": "Jason Spence",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
