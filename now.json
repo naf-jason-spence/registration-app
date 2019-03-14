@@ -1,7 +1,6 @@
 {
     "name": "registration-app",
     "version": 2,
-    "type": "npm",
     "builds": [
         {
           "src": "**/*.js",
