@@ -9,7 +9,7 @@ const app = require('./app');
 const currEnv = process.env.NODE_ENV;
 
 // Connect to database based on environment
-if(currEnv !== 'prod') mongoose.connect(process.env.DEV_DATABASE);
+if(currEnv !== 'production') mongoose.connect(process.env.DEV_DATABASE);
 else mongoose.connect(process.env.PROD_DATABASE);
 
 mongoose.Promise = global.Promise;
