@@ -1,5 +1,11 @@
 {
     "name": "registration-app",
     "version": 1,
-    "type": "npm"
+    "type": "npm",
+    "builds": [
+        {
+          "src": "**/*.js",
+          "use": "@now/node"
+        }
+      ]
 }
