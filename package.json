@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "SET NODE_ENV=dev&&nodemon ./start.js",
+    "build:prod": "nodemon ./start.js",
     "watch:prod": "SET NODE_ENV=prod&&nodemon ./start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
