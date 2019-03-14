@@ -1,5 +1,9 @@
+// Imports
 require('dotenv').config();
 const mongoose = require('mongoose');
+
+require('./models/Registration');
+const app = require('./app');
 
 // Get current environment
 const currEnv = process.env.NODE_ENV;
@@ -16,9 +20,6 @@ mongoose.connection
   .on('error', (err) => {
     console.log(`Connection error: ${err.message}`);
   });
-
-require('./models/Registration');
-const app = require('./app');
 
 const server = app.listen(3000, () => {
   console.log(`Express is running on port ${server.address().port}`);
