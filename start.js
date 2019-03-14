@@ -1,11 +1,17 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DATABASE);
+// Get current environment
+const currEnv = process.env.NODE_ENV;
+
+// Connect to database based on environment
+if(currEnv !== 'prod') mongoose.connect(process.env.DEV_DATABASE);
+else mongoose.connect(process.env.PROD_DATABASE);
+
 mongoose.Promise = global.Promise;
 mongoose.connection
   .on('connected', () => {
-    console.log(`Mongoose connection open on ${process.env.DATABASE}`);
+    console.log(`Mongoose connection open on "${currEnv}" environment.`);
   })
   .on('error', (err) => {
     console.log(`Connection error: ${err.message}`);
