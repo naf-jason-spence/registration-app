@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "now-build": "NODE_ENV=production&&nodemon ./start.js",
+    "now-build": "NODE_ENV=production&&node ./start.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "SET NODE_ENV=development&&nodemon ./start.js",
     "watch:prod": "SET NODE_ENV=production&&nodemon ./start.js"
