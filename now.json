@@ -3,8 +3,16 @@
     "version": 2,
     "builds": [
         {
+          "src": "public/css/*.css",
+          "use": "@now/static"
+        },
+        {
           "src": "**/*.js",
           "use": "@now/node"
+        },
+        {
+          "src": "views/*.pug",
+          "use": "@now/static"
         }
       ]
 }
