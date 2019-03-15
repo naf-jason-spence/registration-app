@@ -5,6 +5,10 @@
         {
           "src": "**/*.js",
           "use": "@now/node"
+        },
+        {
+          "src": "package.json",
+          "use": "@now/static-build"
         }
       ]
 }
