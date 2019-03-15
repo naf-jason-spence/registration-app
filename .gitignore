@@ -1,4 +1,3 @@
 # Specify directories or file per line
 node_modules
 .env
-users.htpasswd
