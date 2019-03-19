@@ -8,3 +8,5 @@ This tutorial can be referred to by visiting this website: https://www.sitepoint
 - MongoDB
 - Mongoose
 - Pug
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dacd1f06-3cbc-446b-b474-22e8d33848e9/deploy-status)](https://app.netlify.com/sites/determined-dubinsky-20a9a3/deploys)
