@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "SET NODE_ENV=production&&nodemon ./start.js",
+    "start": "nodemon ./start.js",
     "watch": "SET NODE_ENV=development&&nodemon ./start.js",
     "watch:prod": "SET NODE_ENV=production&&nodemon ./start.js"
   },
